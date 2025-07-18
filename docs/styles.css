@@ -98,3 +98,32 @@
   borderRadius: 5px;
   box-sizing: border-box;
 }
+
+/* Styling backgroung image */
+.landing-background {
+  min-height: 100vh;
+  background-image: url('/Moine_Embedded_Image.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.7); /* Adjust opacity as needed */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.landing-background > * {
+  position: relative;
+  z-index: 1;
+}
+
+.landing-content {
+  background: rgba(30, 30, 30, 0.7); /* dark, semi-transparent */
+  padding: 2rem;
+  border-radius: 1rem;
+}
