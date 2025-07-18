@@ -1,0 +1,17 @@
+{
+  "name": "CNC",
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://clbenoit.github.io/cnc_website/",
+  "scripts": {
+    "dev": "vocs dev",
+    "build": "vocs build",
+    "preview": "vocs preview"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "react-vertical-timeline-component": "^3.6.0",
+    "vocs": "1.0.0-alpha.38"
+  }
+}
